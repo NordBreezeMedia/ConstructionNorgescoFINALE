@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./LOGOTRANSP.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0c121c" />
+    <meta
+      name="description"
+      content="Construction Norgesco — partenaire de confiance en rénovation résidentielle. Laval, Laurentides et Lanaudière."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Construction Norgesco</title>
+  </head>
+  <body>
+    <div class="site">
+      <header class="navbar">
+        <a class="navbar__brand" href="#home" aria-label="Construction Norgesco">
+          <img src="./LOGOTRANSP.png" alt="Construction Norgesco" class="navbar__logo" />
+        </a>
+        <nav class="tabs" id="site-nav" aria-label="Primary">
+          <a href="#home" data-i18n="nav.home">Accueil</a>
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#why" data-i18n="nav.why">À propos</a>
+          <a href="#areas" data-i18n="nav.areas">Secteurs</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="navbar__tools">
+          <div class="lang-toggle" role="group" aria-label="Language">
+            <button type="button" id="lang-fr" class="is-active" aria-pressed="true">FR</button>
+            <span aria-hidden>/</span>
+            <button type="button" id="lang-en" aria-pressed="false">EN</button>
+          </div>
+          <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+            <span class="nav-toggle__bars" aria-hidden="true"></span>
+          </button>
+        </div>
+      </header>
+
+      <section id="home" class="hero hero--photo-v3" aria-label="Projet de rénovation Construction Norgesco">
+        <div class="hero__photo" aria-hidden="true">
+          <picture>
+            <source media="(max-width: 719px)" srcset="./MOBILEVERSIONNORGESCO.png" type="image/png" />
+            <img
+              src="./FARMHOUSEMAIN.jpg"
+              alt=""
+              width="2560"
+              height="1850"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
+        </div>
+        <div class="hero__overlay">
+          <div class="hero__copy">
+            <div class="hero__motto">
+              <p data-i18n="hero.line1">Construire avec rigueur</p>
+              <p data-i18n="hero.line2">Rénover avec passion</p>
+              <p data-i18n="hero.line3">Livrer avec fierté</p>
+            </div>
+            <a class="btn btn--primary btn--pulse" href="#contact" data-i18n="hero.cta">
+              Demandez votre soumission gratuite
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services-section">
+        <h2 data-i18n="services.title">Nos services</h2>
+        <div class="services-boxes" id="services-boxes">
+          <article class="service-box service-box--piece-1" style="--piece-delay: 0s">
+            <h3>Revêtement extérieur</h3>
+            <p>Façades durables et soignées qui protègent et embellissent votre maison.</p>
+            <a class="read-more" href="#contact">En savoir plus</a>
+          </article>
+          <article class="service-box service-box--piece-2" style="--piece-delay: 0.12s">
+            <h3>Portes et fenêtres</h3>
+            <p>Confort, efficacité énergétique et finitions nettes, du choix à l’installation.</p>
+            <a class="read-more" href="#contact">En savoir plus</a>
+          </article>
+          <article class="service-box service-box--piece-3" style="--piece-delay: 0.24s">
+            <h3>Sous-sol</h3>
+            <p>Transformer votre sous-sol en espace habitable, chaleureux et fonctionnel.</p>
+            <a class="read-more" href="#contact">En savoir plus</a>
+          </article>
+          <article class="service-box service-box--piece-4" style="--piece-delay: 0.36s">
+            <h3>Cuisine</h3>
+            <p>Une cuisine pensée pour votre quotidien, avec un suivi clair du début à la fin.</p>
+            <a class="read-more" href="#contact">En savoir plus</a>
+          </article>
+          <article class="service-box service-box--piece-5" style="--piece-delay: 0.48s">
+            <h3>Salle de bain</h3>
+            <p>Rénovation complète ou partielle, avec un souci du détail à chaque étape.</p>
+            <a class="read-more" href="#contact">En savoir plus</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="why" class="why-section">
+        <h2 data-i18n="why.title">Pourquoi nous choisir ?</h2>
+        <p class="why-lead" data-i18n="why.lead">
+          Nous croyons qu'un projet réussi repose autant sur la qualité de l'exécution que sur la qualité de la relation avec le client. C'est pourquoi nous nous engageons à offrir :
+        </p>
+        <ul class="why-list" id="why-list">
+          <li>Une communication claire et constante tout au long du projet;</li>
+          <li>Une planification rigoureuse et le respect des échéanciers;</li>
+          <li>Des matériaux de qualité et des méthodes de travail éprouvées;</li>
+          <li>Un souci du détail à chaque étape des travaux;</li>
+          <li>Des prix justes et compétitifs;</li>
+          <li>Un chantier propre, sécuritaire et bien organisé;</li>
+          <li>Une garantie sur notre main-d'œuvre afin d'assurer votre tranquillité d'esprit.</li>
+        </ul>
+        <h3 class="why-subtitle" data-i18n="why.commitmentTitle">Notre engagement</h3>
+        <div class="why-commitment" id="why-commitment">
+          <p>
+            Chez Construction Norgesco Inc., chaque projet est traité comme s'il s'agissait du nôtre. Notre objectif n'est pas seulement de réaliser des travaux de qualité, mais également de bâtir une relation de confiance durable avec chacun de nos clients.
+          </p>
+          <p>
+            Que vous souhaitiez rénover votre cuisine, votre salle de bain ou votre sous-sol, moderniser votre résidence, remplacer votre revêtement extérieur ou entreprendre un projet de rénovation complet, notre équipe mettra tout en œuvre pour vous accompagner du début à la fin avec professionnalisme, intégrité et efficacité.
+          </p>
+          <p>
+            Parce que votre satisfaction est au cœur de nos priorités, nous nous engageons à livrer un résultat à la hauteur de vos attentes, dans le respect de votre budget et de vos délais.
+          </p>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews-section">
+        <h2 data-i18n="reviews.title">Ce que disent nos clients</h2>
+        <div class="reviews-list" id="reviews-list"></div>
+        <a
+          class="btn btn--primary reviews-cta"
+          href="https://www.google.com/search?q=construction+norgesco#lrd=0x2a116307c05398df:0x81bbbe2f24e04bb2,3,,,,"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-i18n="reviews.cta"
+        >
+          Laisser un avis
+        </a>
+      </section>
+
+      <section id="areas" class="areas-section">
+        <h2 data-i18n="areas.title">Secteurs desservis</h2>
+        <p data-i18n="areas.lead">Nous desservons Laval, Laurentides et Lanaudière.</p>
+        <div class="areas-row" id="areas-row">
+          <div class="area-pill">Laval</div>
+          <div class="area-pill">Laurentides</div>
+          <div class="area-pill">Lanaudière</div>
+        </div>
+        <p class="areas-hours" data-i18n="quiz.infoHours">24/7</p>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2 data-i18n="quiz.title">Contactez-nous</h2>
+        <p class="contact-lead" data-i18n="quiz.lead">
+          Répondez à 3 questions rapides et recevez une réponse personnalisée.
+        </p>
+        <div class="contact-board">
+          <aside class="direct-contact">
+            <p class="contact-board__kicker" data-i18n="direct.colTitle">Coordonnées</p>
+            <dl class="direct-contact__list">
+              <div class="direct-contact__item">
+                <dt data-i18n="direct.presidentLabel">Président</dt>
+                <dd data-i18n="direct.president">M. Philippe St-Denis</dd>
+              </div>
+              <div class="direct-contact__item">
+                <dt data-i18n="direct.phoneLabel">Téléphone</dt>
+                <dd><a href="tel:+14385184292">(438) 518-4292</a></dd>
+              </div>
+              <div class="direct-contact__item">
+                <dt data-i18n="direct.emailLabel">Courriel</dt>
+                <dd>
+                  <a href="mailto:info@constructionnorgesco.ca">info@constructionnorgesco.ca</a>
+                </dd>
+              </div>
+              <div class="direct-contact__item">
+                <dt data-i18n="direct.facebookLabel">Facebook</dt>
+                <dd>
+                  <a
+                    href="https://www.facebook.com/constructionnorgesco"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    constructionnorgesco
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </aside>
+          <div class="quiz">
+            <p class="contact-board__kicker" data-i18n="quiz.colTitle">Votre projet</p>
+            <div class="quiz__progress" aria-hidden>
+              <span id="quiz-progress"></span>
+            </div>
+            <div id="quiz-panel"></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>
+          <p data-i18n="footer.tagline">construction — gestion — rénovation</p>
+          <p>© <span id="year"></span> Construction Norgesco. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+        </div>
+      </footer>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
